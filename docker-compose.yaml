@@ -1,0 +1,10 @@
+version: "2"
+services:
+  iprest:
+    image: iprest
+    ports:
+      - "8080:8080"
+    environment:
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - HOSTED_ZONE=${HOSTED_ZONE}
